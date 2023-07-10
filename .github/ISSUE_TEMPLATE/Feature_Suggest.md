@@ -10,14 +10,16 @@ assignees: ''
 
 ### scope
 
-<!-- choose scope from below -->
+<!-- choose scope from below list with ✔️ -->
 
-- [ ] core
-- [ ] utils
-- [ ] cotents_script
-- [ ] background_script
-- [ ] newtab_page
-- [ ] popup_page
+- docs
+- chore
+- cotents_script
+- core
+- utils
+- background_script
+- newtab_page
+- popup_page
 
 ### description
 
