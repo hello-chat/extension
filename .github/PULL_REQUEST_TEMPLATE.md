@@ -3,21 +3,24 @@
 ## Related Issues
 
 <!-- use Sementic prefix to close or fix or resolve
-
-order: close > fix > resolve, ascending order of issue number
-Example: close #1, fix #2, resolve #3
--->
+Example: close #1, fix #2, resolve #3 -->
 
 ## Request Type
 
-<!-- Feature or Bug -->
+<!-- select Request Type from below with ✔️ -->
 
-- [ ] 🚀 Feature
-- [ ] 🪛 Fix
-- [ ] ♻️ Refactor
-- [ ] ✅ Test
-- [ ] 🧪 add Failing Test(that will pass before merge)
-<!-- when you add a failing test, please add a comment to the test explaining why it is failing -->
+- 🚀 Feature
+- 🪛 Fix
+- ♻️ Refactor
+- ✅ Test
+- 🧪 add Failing Test(that will pass before merge)
+- 📝 Documentation
+- 🔧 Chore
+- 🤖 ci
+- ⚡️ perf
+- ⏪ revert
+- 🎨 style
+-
 
 ## Description
 
