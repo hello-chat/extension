@@ -1,19 +1,26 @@
 ---
 name: 🚀 Feature request
 about: Request a feature
-title: '[FEATURE] <title>'
+title: '[FEATURE/<scope>] <title>'
 labels: Feature, Needs Triage
 assignees: ''
 ---
 
-<!--
-Note: Please search to see if an issue already exists for the feature you'd like to see added.
--->
+## Requirements
 
-#### Requirements
+### scope
 
-<!-- A concise description of what you want to happen. -->
+<!-- choose scope from below -->
 
-#### References
+- [ ] core
+- [ ] utils
+- [ ] cotents_script
+- [ ] background_script
+- [ ] newtab_page
+- [ ] popup_page
+
+### description
+
+## References
 
 <!-- Links? References? Anything that will give us more context about the feature that you are requesting! -->
