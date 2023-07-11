@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import ContentApp from './ContentApp';
+import App from './App';
 import './index.css';
 import Modal from '../components/Modal';
 
@@ -23,7 +23,7 @@ if (!isBlack) {
           bottom: '2rem',
         }}
       >
-        <Modal.Contents Component={ContentApp} />
+        <Modal.Contents Component={App} />
         <Modal.Trigger
           Component={({ onOpen }) => <button onClick={onOpen}>open</button>}
         />

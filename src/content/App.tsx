@@ -1,8 +1,8 @@
-type ContentAppProps = {
+type AppProps = {
   onClose: () => void;
 };
 
-const ContentApp = ({ onClose }: ContentAppProps) => {
+const App = ({ onClose }: AppProps) => {
   return (
     <div>
       <button onClick={onClose}>close</button>
@@ -11,4 +11,4 @@ const ContentApp = ({ onClose }: ContentAppProps) => {
   );
 };
 
-export default ContentApp;
+export default App;
