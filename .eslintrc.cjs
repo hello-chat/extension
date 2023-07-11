@@ -10,8 +10,9 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['@typescript-eslint', 'react-refresh', 'import'],
+  plugins: ['@typescript-eslint', 'react-refresh', 'import', '@emotion'],
   rules: {
+    '@emotion/pkg-renaming': 'error',
     'import/no-unresolved': 'error',
     'react-refresh/only-export-components': 'warn',
     'import/order': [
@@ -48,8 +49,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
-      alias: {
-      },
+      alias: {},
     },
   },
 };
