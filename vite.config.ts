@@ -21,5 +21,13 @@ const manifestConfig = defineManifest({
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), crx({ manifest: manifestConfig })],
+  plugins: [
+    react({
+      jsxImportSource: '@emotion/react',
+      babel: {
+        plugins: ['@emotion/babel-plugin'],
+      },
+    }),
+    crx({ manifest: manifestConfig }),
+  ],
 });
