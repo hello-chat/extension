@@ -7,6 +7,6 @@ describe('App', () => {
   it('render App', async () => {
     render(<App onClose={() => null} />);
 
-    expect(screen.getByText('Hello-Chat-app')).toBeInTheDocument();
+    expect(screen.getByText('PATH:HOME')).toBeInTheDocument();
   });
 });
