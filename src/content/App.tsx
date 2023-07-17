@@ -1,13 +1,17 @@
+import { RouterProvider, createMemoryRouter } from 'react-router-dom';
+
+import router from './routes';
+
 type AppProps = {
   onClose: () => void;
 };
 
 const App = ({ onClose }: AppProps) => {
   return (
-    <div>
-      <button onClick={onClose}>close</button>
-      <div>Hello-Chat-app</div>
-    </div>
+    <>
+      <button onClick={onClose}>X</button>
+      <RouterProvider router={createMemoryRouter(router)} />
+    </>
   );
 };
 
