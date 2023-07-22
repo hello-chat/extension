@@ -15,7 +15,6 @@ const AppContainer = ({ children }: AppContainerProps) => {
     const outSideClick = (e: MouseEvent) => {
       if (!ref.current) return;
       if (!ref.current?.contains(e.target as Node)) {
-        console.log('click outside');
         close();
       }
     };
@@ -23,7 +22,6 @@ const AppContainer = ({ children }: AppContainerProps) => {
       addEventListener('mousedown', outSideClick);
     }
     return () => {
-      console.log('unmount');
       removeEventListener('mousedown', outSideClick);
     };
   }, [close]);
