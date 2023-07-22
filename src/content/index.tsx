@@ -17,13 +17,13 @@ if (!isBlack) {
   createRoot(root).render(
     <React.StrictMode>
       <Modal
-        style={{
+        css={{
           position: 'fixed',
-          left: '2rem',
+          right: '2rem',
           bottom: '2rem',
         }}
       >
-        <Modal.Contents Component={App} />
+        <Modal.Contents Component={<App />} />
         <Modal.Trigger
           Component={({ onOpen }) => <button onClick={onOpen}>open</button>}
         />

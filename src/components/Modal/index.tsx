@@ -55,19 +55,17 @@ function Trigger({ Component }: TriggerProps) {
   }
   return <Component onOpen={open} />;
 }
-
-function Content({
-  Component,
-}: {
-  Component: ComponentType<{ onClose: () => void }>;
-}) {
-  const { isOpen, close } = useModal();
+type ContentProps = {
+  Component: React.ReactNode;
+};
+function Content({ Component }: ContentProps) {
+  const { isOpen } = useModal();
 
   if (!isOpen) {
     return null;
   }
 
-  return <Component onClose={close} />;
+  return Component;
 }
 
 Modal.Trigger = Trigger;
