@@ -5,7 +5,7 @@ import App from './App';
 
 describe('App', () => {
   it('render App', async () => {
-    render(<App onClose={() => null} />);
+    render(<App />);
 
     expect(screen.getByText('PATH:HOME')).toBeInTheDocument();
   });
